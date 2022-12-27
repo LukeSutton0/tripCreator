@@ -1,0 +1,6 @@
+https://learn.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=javase&pivots=platform-linux-development-environment-maven
+https://blog.idrsolutions.com/2015/12/how-to-use-the-azure-cloud-on-the-netbeans-ide/
+https://www.devbridge.com/articles/messaging-with-rabbitmq-in-node-js/
+https://stackoverflow.com/questions/38112816/difference-in-azure-availability-sets-and-scale-sets
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+https://www.restapitutorial.com/lessons/httpmethods.html
