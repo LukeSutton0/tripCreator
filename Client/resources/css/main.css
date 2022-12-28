@@ -7,6 +7,11 @@
     padding: 0;
     margin:0;
 }
+a{
+    color:inherit;
+    text-decoration: inherit;
+
+}
 
 html { 
     background: url(/resources/images/indexHatMan.jpg) no-repeat center center fixed; 
@@ -16,7 +21,23 @@ html {
     background-size: cover;
   }
 
+#logoDiv{
+    /* background: rgba(255, 255, 255, 0.75); */
+    /* border-radius: 50%; */
+    width:8vw;
+    height:8vw;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    
+}
+#logo{
+    width:8vw;
+    cursor: pointer;
+}
 
+
+
+/* Home page */
 #welcomeDiv{
     display:flex;
     flex-direction: column;
@@ -43,8 +64,6 @@ html {
     left: 35vw;
     width:30vw;
 }
-
-
 .mainButton{
     display:flex;
     justify-content: center;
@@ -55,8 +74,27 @@ html {
     font-family: 'LemonJelly',sans-serif;
     font-size: 2.5em;
 }
-
 .mainButton:hover{
     background: rgba(255, 255, 255, 0.75);
     color: rgb(65, 65, 65);
+}
+
+/* End of home page */
+
+.accountInput{
+    position: absolute;
+    width:40vw;
+    height:50vh;
+    top: 30vh;
+    left: 30vw;
+    background: rgba(255, 255, 255, 0.753);
+    display:flex;
+    flex-direction: column;
+}
+.createLoginHeader{
+    display:flex;
+    justify-content: center;
+    font-family: 'LemonJelly',sans-serif;
+    font-size: 3.5em;
+    border-bottom: 1px solid black;
 }

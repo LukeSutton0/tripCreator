@@ -1,0 +1,17 @@
+p:target {
+    background-color: gold;
+  }
+  
+  /* Add a pseudo-element inside the target element */
+  p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: 0.25em;
+  }
+  
+  /* Style italic elements within the target element */
+  p:target i {
+    color: red;
+  }
+  
