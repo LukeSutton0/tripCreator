@@ -4,3 +4,11 @@ https://www.devbridge.com/articles/messaging-with-rabbitmq-in-node-js/
 https://stackoverflow.com/questions/38112816/difference-in-azure-availability-sets-and-scale-sets
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
 https://www.restapitutorial.com/lessons/httpmethods.html
+
+
+ssh -i C:\Users\xbox3\.ssh\TripCreatorVM_key.pem azureuser@51.132.15.211
+ssh -i C:\Users\xbox3\.ssh\id_rsa azureuser@20.168.250.10
+
+cheap pass = AP12345678#c
+
+
