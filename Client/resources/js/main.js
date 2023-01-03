@@ -51,7 +51,35 @@ const locationHandler = async () => {
         .setAttribute("content", route.description);
 };
 
+const endpoint = "http://localhost:8080/RestService";
+
+async function sendJson() {
+  // Create a JSON object with some data
+  const json = { key: "value" };
+
+  // Send a POST request to the /json endpoint with the JSON payload
+  const response = await fetch(endpoint,  {
+    mode:'no-cors',
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(json)
+  });
+
+  // Print the response status
+  console.log(`Response status: ${response.status}`);
+}
+
+sendJson();
+
+
+
+
+
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
 locationHandler();
+
+
+
+
