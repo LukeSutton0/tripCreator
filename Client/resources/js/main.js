@@ -51,28 +51,54 @@ const locationHandler = async () => {
         .setAttribute("content", route.description);
 };
 
-const endpoint = "http://localhost:8080/RestService";
+
+
+const endpointLocal = "http://127.0.0.1:8080/TripCreator"; //path
+const endpointAzure =  "http://51.132.15.211:8080/TripCreator";
+
+
+const endpoint = endpointLocal; //change when swapping tomcat
+const myIp = "http://127.0.0.1:5500"
+
 
 async function sendJson() {
-  // Create a JSON object with some data
-  const json = { key: "value" };
-
-  // Send a POST request to the /json endpoint with the JSON payload
-  const response = await fetch(endpoint,  {
-    mode:'no-cors',
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(json)
-  });
-
-  // Print the response status
+    const dataToSend = { aValue: "myvalue" };
+    // js promise waits till response from server
+    const response = await fetch(endpoint + "/Page1",  {
+        method: "POST",
+        headers:{
+            'Accept':'application/json',
+            'Content-Type': 'application/json',
+            'Origin':myIp,
+          },
+        credentials: "omit",
+        body: JSON.stringify(dataToSend),
+    })
   console.log(`Response status: ${response.status}`);
+  console.log(response.text());
 }
 
+
+
+
+async function GetJson() {
+    const response = await fetch(
+        endpoint + "/Test",  {
+        method: "GET",
+        headers:{
+            'Accept':'text/plain', //data type client wants to receive
+            //'Content-Type': 'text/plain', //in request sent
+          },
+        credentials: "omit",
+    })
+    console.log(`Response status: ${response.status}`);  
+    console.log(response.text());
+}
+
+
 sendJson();
-
-
-
+//document.getElementById('logo').addEventListener('click', function() {
+GetJson();;
 
 
 // create a function that watches the hash and calls the urlLocationHandler

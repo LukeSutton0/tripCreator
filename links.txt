@@ -9,6 +9,14 @@ https://www.restapitutorial.com/lessons/httpmethods.html
 ssh -i C:\Users\xbox3\.ssh\TripCreatorVM_key.pem azureuser@51.132.15.211
 ssh -i C:\Users\xbox3\.ssh\id_rsa azureuser@20.168.250.10
 
+curl -D - "http://localhost:8080/TripCreator/Page1"
+
+sudo systemctl restart tomcat9
+jar -xvf yourWARfileName.war
 cheap pass = AP12345678#c
 
-
+https://tomcat.apache.org/tomcat-9.0-doc/images/cors-flowchart.png
+https://docs.jboss.org/resteasy/docs/4.7.6.Final/userguide/html_single/index.html#Using_Path
+https://www.baeldung.com/resteasy-tutorial
+https://www.logicbig.com/tutorials/java-ee-tutorial/jax-rs/post-example.html
+https://docs.oracle.com/cd/E19798-01/821-1841/6nmq2cp1v/index.html

@@ -4,12 +4,20 @@
  * and open the template in the editor.
  */
 
+package src;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-
+import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.concurrent.ExecutionException;
+import java.util.function.Supplier;
 /**
  * This class is identical to the one in Client.java. The difference is that it is used to
  * connect to a web server on port 80. Why this port?
@@ -47,12 +55,20 @@ public class HttpClient {
     }
     
     public static void main(String  args[]) throws IOException {
-        HttpClient client = new HttpClient();
-        // Establish a socket connection to remote web server. Why is port 80 being used?
+        HttpClient client = new HttpClient(); //makes client
+        
+        var request = HttpRequest.newBuilder(
+                URI.create("http://www.7timer.info/bin/astro.php?lon=%20-1.94&lat=52.09&lang=en&ac=0&unit=metric&output=json HTTP/1.0"))
+                .header("accept","application/json")
+                .build();
+        var response = client.sendAsync(request,new JsonBodyHandler<>(APOD.class))
+                
+                
+                
         client.startConnection("www.7timer.info", 80);
         String request = "GET /bin/astro.php?lon=%20-1.94&lat=52.09&lang=en&ac=0&unit=metric&output=json HTTP/1.0";
-        request += "\r\n"; // What does this combination of symbols mean? 
-        request += "\r\n"; // Why do we need two of them?
+        request += "\r\n"; // String formatting
+        request += "\r\n"; 
         String response = client.sendMessage(request);
         System.out.println("Server HTTP Response: " + response);
     }
