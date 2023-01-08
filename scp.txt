@@ -1,0 +1,5 @@
+scp -r xbox3@79.78.252.127:\C:\Users\xbox3\OneDrive\Documents\transfer /usr/share/tomcat9/lib
+
+scp C:/tomcat-jdbc-10.1.4.jar azureuser@51.132.15.211:/usr/share/tomcat9/lib/tomcat-jdbc-10.1.4.jar
+
+scp file xbox3@azurehost:directory/targetfile

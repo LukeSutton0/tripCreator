@@ -5,6 +5,81 @@ document.getElementById('logo').addEventListener('mouseover', function() {
     this.src = '/resources/images/logo2.PNG';
 });
 
+const endpointLocal = "http://127.0.0.1:8080/TripCreator"  ; //path
+const endpointAzure =  "http://51.132.15.211:8080/TripCreator"  ;
+
+const endpoint = endpointLocal; //change when swapping tomcat
+const myIp = "http://127.0.0.1:5500"
+
+
+
+
+
+// async function sendJson() {
+//     const dataToSend = { aValue: "myvalue" };
+//     // js promise waits till response from server
+//     const response = await fetch(endpoint + "/Page",  {
+//         method: "POST",
+//         headers:{
+//             'Accept':'application/json',
+//             'Content-Type': 'application/json',
+//             'Origin':myIp,
+//           },
+//         credentials: "omit",
+//         body: JSON.stringify(dataToSend),
+//     })
+//   console.log(`Response status: ${response.status}`);
+//   console.log(response.text());
+// }
+
+// async function GetJson() {
+//     const response = await fetch(
+//         endpoint + "/Page/CreateAccount",{
+//         method: "GET",
+//         headers:{
+//             'Accept':'application/json', //data type client wants to receive
+//           },
+//         credentials: "omit",
+//     })
+//     //console.log(`Response status: ${response.status}`);  
+//     const result = await response.json();
+//     return result;
+// }
+
+
+
+// GetJson().then(result => {
+//     console.log(result)
+//     console.log(result.age);
+//     console.log(result.name);
+//     //document.getElementById("test").innerHTML = result.name;
+// });
+
+
+
+
+
+//Code graveyard
+/*
+
+// async function GetPlain() {
+//     const response = await fetch(
+//         endpoint + "/Test",  {
+//         method: "GET",
+//         headers:{
+//             'Accept':'text/plain', //data type client wants to receive
+//             //'Content-Type': 'text/plain', //in request sent
+//           },
+//         credentials: "omit",
+//     })
+//     console.log(`Response status: ${response.status}`);  
+//     console.log(response.text());
+// }
+
+
+
+
+
 const urlPageTitle = "Trip Planner";
 
 const routes = {
@@ -50,62 +125,9 @@ const locationHandler = async () => {
         .querySelector('meta[name="description"]')
         .setAttribute("content", route.description);
 };
-
-
-
-const endpointLocal = "http://127.0.0.1:8080/TripCreator"; //path
-const endpointAzure =  "http://51.132.15.211:8080/TripCreator";
-
-
-const endpoint = endpointLocal; //change when swapping tomcat
-const myIp = "http://127.0.0.1:5500"
-
-
-async function sendJson() {
-    const dataToSend = { aValue: "myvalue" };
-    // js promise waits till response from server
-    const response = await fetch(endpoint + "/Page1",  {
-        method: "POST",
-        headers:{
-            'Accept':'application/json',
-            'Content-Type': 'application/json',
-            'Origin':myIp,
-          },
-        credentials: "omit",
-        body: JSON.stringify(dataToSend),
-    })
-  console.log(`Response status: ${response.status}`);
-  console.log(response.text());
-}
-
-
-
-
-async function GetJson() {
-    const response = await fetch(
-        endpoint + "/Test",  {
-        method: "GET",
-        headers:{
-            'Accept':'text/plain', //data type client wants to receive
-            //'Content-Type': 'text/plain', //in request sent
-          },
-        credentials: "omit",
-    })
-    console.log(`Response status: ${response.status}`);  
-    console.log(response.text());
-}
-
-
-sendJson();
-//document.getElementById('logo').addEventListener('click', function() {
-GetJson();;
-
-
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
 locationHandler();
 
-
-
-
+*/
