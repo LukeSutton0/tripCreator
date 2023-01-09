@@ -22,14 +22,14 @@
 
 #tripButtonDiv{
     display:flex;
-    justify-content: end;
+    justify-content: space-between;
     font-family: 'LemonJelly',sans-serif;
     font-size: 2.5em;
 }
 
 #tripButtonDiv p{
     padding:1vw;
-    margin-left:1vw;
+    
     margin-bottom: 1vh;
     border-radius: 8%;
     background: rgba(255, 255, 255, 0.753);
@@ -39,6 +39,15 @@
     background: rgba(255, 255, 255, 0.75);
     color: rgb(65, 65, 65);
 }
+#findAndCreateDiv{
+    display:flex;
+    
+}
+#findAndCreateDiv p{
+    margin-left:1vw;
+}
+
+
 
 #tripBox{
     background: rgba(255, 255, 255, 0.753);
@@ -47,4 +56,21 @@
 #tripBoxEntries{
     display:flex;
     justify-content: space-around;
+    
+}
+
+.tripEntry{
+    display:flex;
+    justify-content: space-around;
+}
+.tripEntry p{
+    font-size: 2vw;
+}
+.tripDiv p{
+    font-size: 1vw;
+}
+.headerTitle{
+    font-size: 1.5vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }

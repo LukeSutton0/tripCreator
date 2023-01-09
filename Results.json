@@ -1,0 +1,42 @@
+[
+  {
+    "trip_id": 1,
+    "location": "Evesham",
+    "date": "2023/01/08",
+    "weather": "Sunny",
+    "interested": "1134",
+    "user_id_owner": 1
+  },
+  {
+    "trip_id": 2,
+    "location": "New York City",
+    "date": "2022-07-01",
+    "weather": "sunny",
+    "interested": null,
+    "user_id_owner": 1
+  },
+  {
+    "trip_id": 6,
+    "location": "San Francisco",
+    "date": "2022-12-25",
+    "weather": "foggy",
+    "interested": null,
+    "user_id_owner": 1
+  },
+  {
+    "trip_id": 9,
+    "location": "Sydney",
+    "date": "2023-05-02",
+    "weather": "rainy",
+    "interested": null,
+    "user_id_owner": 1
+  },
+  {
+    "trip_id": 10,
+    "location": "London",
+    "date": "2023-06-19",
+    "weather": "cloudy",
+    "interested": null,
+    "user_id_owner": 1
+  }
+]

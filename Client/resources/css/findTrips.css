@@ -1,0 +1,49 @@
+
+
+
+#tripTickDiv{
+    display:flex;
+    flex-direction: column;
+    margin-top: 3.7vh;
+}
+
+#tripTickDiv input{
+    margin-top: 0.66em;
+    margin-right: 10px;
+}
+
+#tripTickId{
+    display:flex;
+    align-items: left;
+}
+
+#tickId{
+    max-width: 200px;
+    font-family: 'LemonJelly',sans-serif;
+    font-size: 2vw;
+    margin-top: 3vh;
+}
+
+#confirmInterestButton{
+    background: rgba(255, 255, 255, 0.753);
+    color: rgb(22, 22, 22);
+    padding:10px;
+    border-radius: 8%;
+    cursor: pointer;
+    font-size: 0.8vw;
+    margin-top: 20vh;
+    padding:1vw 2vw;
+}
+
+#confirmInterestButton:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(168, 168, 168);
+}
+#divDescButton{
+    max-width: 20vw;
+}
+#divDescFlex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

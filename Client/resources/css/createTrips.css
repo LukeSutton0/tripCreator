@@ -1,0 +1,82 @@
+#sideBySide{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top:3vw;
+    font-size: 1.5vw;
+}
+
+#divStack{
+    display: flex;
+    
+}
+.divIndiv{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+    margin-right: 2vw;
+}
+
+.divIndiv input{
+    height:1.5vw;
+    margin-bottom: 1vw;
+}
+.divIndiv p{
+    margin-bottom: 1vw;
+}
+
+#checkWeatherButton{
+    padding:1vw;
+    
+    background: rgba(255, 255, 255, 0.753);
+    color: rgb(22, 22, 22);
+    padding:10px;
+    border-radius: 10%;
+    
+    cursor: pointer;
+}
+
+
+#checkWeatherButton:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(168, 168, 168);
+}
+
+#destination{
+    padding-left: 5px;
+}
+
+#weatherImg{
+    height: 5vw;
+}
+#weatherCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1vw;
+}
+
+
+
+
+#confirmTripCDiv{
+    display:flex;
+    justify-content: end;
+}
+
+
+#confirmTripCreate{
+    background: rgba(255, 255, 255, 0.753);
+    color: rgb(22, 22, 22);
+    padding:10px;
+    border-radius: 8%;
+    cursor: pointer;
+    font-size: 0.8vw;
+    margin-top: 10vh;
+    margin-right:20vw;
+    padding:1vw 2vw;
+}
+
+#confirmTripCreate:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(168, 168, 168);
+}
