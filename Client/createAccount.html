@@ -1,21 +1,40 @@
-
-<div class="accountInput">
-    <div class="createLoginHeader">
-        <p>Create Account</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="resources/css/main.css">
+  </head>
+  <body>
+    <div id="logoDiv">
+      <a href="/">
+        <img src="resources/images/logo.PNG" id="logo">
+      </a>
     </div>
-    <div>
-        <p>Generate User ID</p>
-        <p>Button here</p>
+    <div class="accountInput">
+        <div class="createLoginHeader">
+            <p>Create Account</p>
+        </div>
+        <div class="createFlexSmall">
+            <div>
+                <p>Generated User ID: </p>
+                <p>Enter password</p>
+                <p>Confirm password</p>
+            </div>
+            <div>
+                <p id= "userID">ID:</p>
+                <p>Entry Box</p>
+                <p>Entry Box</p>
+            </div>
+        </div>
+        <div class="confirmButton">
+            <p id="confirmButton">Confirm</p>
+        </div>
     </div>
-    <div>
-        <p>Enter password</p>
-        <p>Entry Box</p>
-    </div>
-    <div>
-        <p>Confirm password</p>
-        <p>Entry Box</p>
-    </div>
-    <div>
-        <p>Confirm Button</p>
-    </div>
-</div>
+    
+    <script src="resources/js/main.js"></script>
+    <script src="resources/js/createAccount.js"></script>
+  </body>
+</html>

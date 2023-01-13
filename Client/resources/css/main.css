@@ -67,12 +67,12 @@ html {
 .mainButton{
     display:flex;
     justify-content: center;
-    width:200px;
+    width:10vw;
     background: rgba(255, 255, 255, 0.55);
     cursor: pointer;
     padding: 1vh;
     font-family: 'LemonJelly',sans-serif;
-    font-size: 2.5em;
+    font-size: 2vw;
 }
 .mainButton:hover{
     background: rgba(255, 255, 255, 0.75);
@@ -81,6 +81,7 @@ html {
 
 /* End of home page */
 
+/* Create/login shared */
 .accountInput{
     position: absolute;
     width:40vw;
@@ -98,3 +99,45 @@ html {
     font-size: 3.5em;
     border-bottom: 1px solid black;
 }
+.confirmButton{
+    display:flex;
+    justify-content: end;
+    height:100vh;
+    align-items:flex-end;
+    margin:5vw;
+    margin: 0vw 7vw 4vw 0vw;
+}
+.confirmButton p{
+    background: rgb(65, 65, 65);;
+    color: rgb(255, 255, 255, 0.75);
+    padding:10px;
+    border-radius: 8%;
+    cursor: pointer;
+    font-size: 0.8vw;
+}
+.confirmButton :hover{
+    background: rgba(97, 97, 97);
+    color: rgb(168, 168, 168);
+}
+.createFlexSmall{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:5vh;
+    font-family: sans-serif;
+    font-size: 0.8vw;
+   
+}
+.createFlexSmall div{
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+}
+.createFlexSmall div p{
+    margin:10px;
+    margin-bottom: 30px;
+}
+
+/* Create login end */
+
+/*Main trips*/

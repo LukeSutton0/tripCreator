@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/myTrips.css">
+    <link rel="stylesheet" href="resources/css/createTrips.css">
+  </head>
+  <body>
+    <div id="logoDiv">
+      <a href="/">
+        <img src="resources/images/logo.PNG" id="logo">
+      </a>
+    </div>
+    <div id="content">
+        <div id="mainBox">
+            <div id="titleDiv">
+                <div>
+                    <p id="title">Create Trip</p>
+                </div>
+            </div>
+            <div id="tripButtonDiv">
+                <div>
+                    <p id="refreshButton">Back To My Trips</p>
+                </div>
+                <div id="findAndCreateDiv">
+                    <div>
+                        <p id="findTripsButton">Find Trips</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tripBox">
+                <div id="sideBySide">
+                    <div id="divStack">
+                        <div class="divIndiv">
+                            <p>Destination:</p>
+                            <p>Date</p>
+                        </div>
+                        <div class="divIndiv">
+                            <input type="text" id="destination"/>
+                            <input type="date" id="date" min="2023-01-09" max="2030-00-00">
+                            <p id="checkWeatherButton">Check Weather</p>
+                        </div>
+                    </div>
+                <div id="weatherDiv">
+                    <p id="weatherHeader">The weather for the requested day:</p>
+                    <div id="weatherCenter">
+                        <img src="/resources/images/unknown.svg" id="weatherImg"/>
+                        <p id="weatherDesc">Unknown</p>
+                    </div>
+                </div>
+            </div>
+            <div id = "confirmTripCDiv">
+                <p id="confirmTripCreate">Confirm</p>
+            </div>
+        </div>
+
+    <script src="resources/js/main.js"></script>
+    <script src="resources/js/createTrips.js"></script>
+  </body>
+</html>
